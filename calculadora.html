@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="titulo">Calculadora</h1>
+
+    <input id="n1" type="text">
+    <div id="sinal">+</div>
+    <input id="n2" type="text">
+    <p id="resultado"></p>
+
+    <button onclick="soma()">+</button>    
+    <button onclick="subtracao()">-</button>
+    <button onclick="mult()">*</button>    
+    <button onclick="div()">/</button>
+</body>
+
+<script>
+
+    function soma() {
+        resultado.innerHTML = Number(n1.value) + Number(n2.value)
+        sinal.innerHTML = "+"
+    }
+
+    function subtracao() {
+        resultado.innerHTML = Number(n1.value) - Number(n2.value)
+        sinal.innerHTML = "-"
+    }
+
+    function mult() {
+        resultado.innerHTML = Number(n1.Value) * Number(n2.value)
+        sinal.innerHTML = "*"
+    }
+
+    function div() {
+        resultado.innerHTML = Number(n1.value) / Number(n2.value)
+        sinal.innerHTML = "/"
+    }
+
+</script>
+</html>
